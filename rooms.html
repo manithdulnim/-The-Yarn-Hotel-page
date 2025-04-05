@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Hotel - Rooms</title>
+</head>
+<body>
+
+<!--Header Section-->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="fw-bold text-warning">LUXURY HOTELS</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-medium" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="Events.html">Events & Ballrooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="spa.html">Spa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="resturant.html">Dining</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="rooms.html">Rooms</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link btn btn-outline-dark px-3 fw-medium" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Toggle Menu Button at Top -->
+<div class="text-center my-3">
+    <button id="toggleMenuBtn" class="btn btn-primary mx-2" title="Toggle Navigation Menu">
+        <i class="fas fa-bars"></i> Toggle Menu
+    </button>
+</div>
+
+<!--Hero Section-->
+<section class="bg-dark text-white py-5 mb-5" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); background-size: cover; background-position: center;">
+    <div class="container py-5 text-center">
+        <h1 class="display-4 fw-bold mb-4">Our Rooms & Suites</h1>
+        <p class="lead">Experience unparalleled comfort in our meticulously designed accommodations</p>
+    </div>
+</section>
+
+<!-- Highlight Prices Button -->
+<div class="text-center my-4">
+    <button id="highlightPricesBtn" class="btn btn-warning mx-2" title="Highlight Prices">
+        <i class="fas fa-dollar-sign"></i> Highlight Prices
+    </button>
+</div>
+
+<!-- Slide Up Button -->
+<div class="text-center my-5">
+    <button id="slideUpBtn" class="btn btn-success mx-2" title="Slide Up Content">
+        <i class="fas fa-arrow-up"></i> Slide Up Content
+    </button>
+    <button id="slideDownBtn" class="btn btn-info mx-2" title="Slide Down Content" style="display:none;">
+        <i class="fas fa-arrow-down"></i> Slide Down Content
+    </button>
+</div>
+
+<!--Room Type Navigation Bar-->
+<div class="bg-light py-3 mb-5">
+    <div class="container">
+        <ul class="nav nav-pills justify-content-center">
+            <li class="nav-item mx-2">
+                <a class="nav-link active" href="#standard">Standard</a>
+            </li>
+            <li class="nav-item mx-2">
+                <a class="nav-link" href="#deluxe">Deluxe</a>
+            </li>
+            <li class="nav-item mx-2">
+                <a class="nav-link" href="#executive">Executive Suite</a>
+            </li>
+            <li class="nav-item mx-2">
+                <a class="nav-link" href="#presidential">Presidential Suite</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--ALL Rooms Section-->
+<div class="container mb-5">
+    <div class="row mb-5 align-items-center" id="standard">
+        <div class="col-md-6 mb-4 mb-md-0">
+            <div class="card shadow-sm h-100">
+                <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="card-img-top" style="height: 300px; object-fit: cover;" alt="Standard Room">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h2>Standard Room</h2>
+            <p class="text-muted">Perfect for solo travelers or couples</p>
+            <p>Our Standard Rooms offer a comfortable retreat with all the essential amenities for a pleasant stay. Featuring a cozy queen-size bed and modern furnishings.</p>
+            
+            <ul class="list-unstyled">
+                <li class="mb-2"><i class="fas fa-wifi text-primary me-2"></i> Free high-speed WiFi</li>
+                <li class="mb-2"><i class="fas fa-tv text-primary me-2"></i> 42" Smart TV</li>
+                <li class="mb-2"><i class="fas fa-coffee text-primary me-2"></i> Coffee/tea maker</li>
+                <li class="mb-2"><i class="fas fa-snowflake text-primary me-2"></i> Air conditioning</li>
+                <li class="mb-2"><i class="fas fa-shower text-primary me-2"></i> Private bathroom with premium toiletries</li>
+            </ul>
+            
+            <div class="d-flex justify-content-between align-items-center mt-4">
+                <span class="fs-3 text-primary fw-bold">From $129/night</span>
+                <button class="btn btn-primary">Book Now</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Shake Rooms Button -->
+    <div class="text-center my-4">
+        <button id="shakeRoomsBtn" class="btn btn-info mx-2" title="Shake Rooms">
+            <i class="fas fa-shake"></i> Shake Rooms
+        </button>
+    </div>
+    
+    <!--Deluxe Room-->
+    <div class="row mb-5 align-items-center flex-md-row-reverse" id="deluxe">
+        <div class="col-md-6 mb-4 mb-md-0">
+            <div class="card shadow-sm h-100">
+                <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="card-img-top" style="height: 300px; object-fit: cover;" alt="Deluxe Room">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h2>Deluxe Room</h2>
+            <p class="text-muted">Spacious comfort with premium amenities</p>
+            <p>Our Deluxe Rooms provide extra space and upgraded amenities for those seeking additional comfort. Enjoy a king-size bed, sitting area, and enhanced views.</p>
+            
+            <ul class="list-unstyled">
+                <li class="mb-2"><i class="fas fa-wifi text-primary me-2"></i> Free high-speed WiFi</li>
+                <li class="mb-2"><i class="fas fa-tv text-primary me-2"></i> 55" Smart TV</li>
+                <li class="mb-2"><i class="fas fa-utensils text-primary me-2"></i> Mini-bar (complimentary items)</li>
+                <li class="mb-2"><i class="fas fa-couch text-primary me-2"></i> Separate sitting area</li>
+                <li class="mb-2"><i class="fas fa-bath text-primary me-2"></i> Deep soaking tub</li>
+                <li class="mb-2"><i class="fas fa-umbrella-beach text-primary me-2"></i> Pool access</li>
+            </ul>
+            
+            <div class="d-flex justify-content-between align-items-center mt-4">
+                <span class="fs-3 text-primary fw-bold">From $199/night</span>
+                <button class="btn btn-primary">Book Now</button>
+            </div>
+        </div>
+    </div>
+    
+    <!--Executive Suite-->
+    <div class="row mb-5 align-items-center" id="executive">
+        <div class="col-md-6 mb-4 mb-md-0">
+            <div class="card shadow-sm h-100">
+                <img src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="card-img-top" style="height: 300px; object-fit: cover;" alt="Executive Suite">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h2>Executive Suite</h2>
+            <p class="text-muted">Luxury living for business or leisure</p>
+            <p>The Executive Suite offers separate living and sleeping areas, perfect for extended stays or business travelers needing extra space to work and relax.</p>
+            
+            <ul class="list-unstyled">
+                <li class="mb-2"><i class="fas fa-wifi text-primary me-2"></i> Premium high-speed WiFi</li>
+                <li class="mb-2"><i class="fas fa-tv text-primary me-2"></i> Dual 55" Smart TVs</li>
+                <li class="mb-2"><i class="fas fa-laptop text-primary me-2"></i> Work desk with ergonomic chair</li>
+                <li class="mb-2"><i class="fas fa-wine-glass-alt text-primary me-2"></i> Welcome wine and fruit basket</li>
+                <li class="mb-2"><i class="fas fa-concierge-bell text-primary me-2"></i> Personalized concierge service</li>
+                <li class="mb-2"><i class="fas fa-spa text-primary me-2"></i> Complimentary spa access</li>
+            </ul>
+            
+            <div class="d-flex justify-content-between align-items-center mt-4">
+                <span class="fs-3 text-primary fw-bold">From $299/night</span>
+                <button class="btn btn-primary">Book Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hide Images Button -->
+    <div class="text-center my-5">
+        <button id="hideImagesBtn" class="btn btn-danger mx-2" title="Toggle Images">
+            <i class="fas fa-eye"></i> Toggle Images
+        </button>
+    </div>
+</div>
+    
+    <!--Presidential Suite-->
+    <div class="container mb-5">
+        <div class="row mb-5 align-items-center" id="presidential">
+            <div class="col-md-6 order-md-2 mb-4 mb-md-0">
+                <div class="card shadow-sm h-100">
+                    <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="card-img-top" style="height: 300px; object-fit: cover;" alt="Presidential Suite">
+                </div>
+            </div>
+            <div class="col-md-6 order-md-1">
+                <h2>Presidential Suite</h2>
+                <p class="text-muted">The ultimate in luxury and space</p>
+                <p>Our magnificent Presidential Suite spans the entire top floor, offering breathtaking panoramic views, a grand living room, dining area, and master bedroom with a luxurious bathroom.</p>
+                
+                <ul class="list-unstyled">
+                    <li class="mb-2"><i class="fas fa-wifi text-primary me-2"></i> Ultra high-speed WiFi</li>
+                    <li class="mb-2"><i class="fas fa-tv text-primary me-2"></i> Multiple 65" Smart TVs</li>
+                    <li class="mb-2"><i class="fas fa-chess-queen text-primary me-2"></i> King-size four-poster bed</li>
+                    <li class="mb-2"><i class="fas fa-hot-tub text-primary me-2"></i> Jacuzzi with city views</li>
+                    <li class="mb-2"><i class="fas fa-car text-primary me-2"></i> Private chauffeur service</li>
+                    <li class="mb-2"><i class="fas fa-utensils text-primary me-2"></i> 24/7 butler service</li>
+                    <li class="mb-2"><i class="fas fa-spa text-primary me-2"></i> Full spa and wellness access</li>
+                </ul>
+            
+                <div class="d-flex justify-content-between align-items-center mt-4">
+                    <span class="fs-3 text-primary fw-bold">From $899/night</span>
+                    <button class="btn btn-primary">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Change Theme Button -->
+    <div class="text-center my-4">
+        <button id="changeThemeBtn" class="btn btn-dark mx-2" title="Toggle Dark Mode">
+            <i class="fas fa-moon"></i> Dark Mode
+        </button>
+    </div>
+    
+    <!--Special Offers-->
+    <div class="row mb-5">
+        <div class="col-12">
+            <div class="card bg-light p-4">
+                <h3 class="text-center mb-4">Special Offers</h3>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Weekend Getaway</h5>
+                                <p class="card-text">Stay 2 nights, get 1 night free in any Deluxe Room or above.</p>
+                                <a href="#" class="btn btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Extended Stay</h5>
+                                <p class="card-text">20% discount for stays of 7 nights or longer.</p>
+                                <a href="#" class="btn btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Honeymoon Package</h5>
+                                <p class="card-text">Romantic amenities and upgrades for newlyweds.</p>
+                                <a href="#" class="btn btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Random Colors Button -->
+    <div class="text-center my-4">
+        <button id="randomColorsBtn" class="btn btn-secondary mx-2" title="Random Colors">
+            <i class="fas fa-palette"></i> Random Colors
+        </button>
+    </div>
+
+<!-- PDF Viewer Section -->
+<div class="container mt-5 mb-5">
+    <div class="text-center mb-3">
+        <button id="togglePdfBtn" class="btn btn-primary">
+            <i class="fas fa-file-pdf"></i> View DOM Diagram
+        </button>
+    </div>
+    <div id="pdfViewerContainer" style="display: none;">
+        <div class="card shadow">
+            <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">DOM Diagram</h5>
+                <button id="closePdfBtn" class="btn btn-sm btn-light">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="card-body p-0">
+                <iframe id="pdfViewer" src="DOM13.pdf" width="100%" height="600px" style="border: none;"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Footer part-->
+<footer class="bg-light py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h5 class="fw-bold mb-3 text-warning">LUXURY HOTELS</h5>
+                <p class="text-muted small">Where exceptional service meets unparalleled luxury across Sri Lanka's finest locations.</p>
+            </div>
+            <div class="col-lg-2 col-md-6 mb-4">
+                <h5 class="fw-bold mb-3">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="index.html" class="text-muted text-decoration-none small">Home</a></li>
+                    <li class="mb-2"><a href="#" class="text-muted text-decoration-none small">Special Offers</a></li>
+                    <li class="mb-2"><a href="rooms.html" class="text-muted text-decoration-none small">Rooms & Suites</a></li>
+                    <li class="mb-2"><a href="#" class="text-muted text-decoration-none small">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 mb-4">
+                <h5 class="fw-bold mb-3">Help</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#" class="text-muted text-decoration-none small">FAQs</a></li>
+                    <li class="mb-2"><a href="#" class="text-muted text-decoration-none small">Location Guide</a></li>
+                    <li class="mb-2"><a href="#" class="text-muted text-decoration-none small">Accessibility</a></li>
+                    <li class="mb-2"><a href="#" class="text-muted text-decoration-none small">Support</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-5 col-md-6 mb-4">
+                <h5 class="fw-bold mb-3">Stay Connected</h5>
+                <p class="text-muted small">Subscribe for exclusive offers and updates</p>
+                <form class="d-flex mb-3">
+                    <input type="email" class="form-control rounded-0 rounded-start" placeholder="Your email address">
+                    <button class="btn rounded-0 rounded-end" style="background-color: #b08430; color: white;">Subscribe</button>
+                </form>
+                <div>
+                    <a href="#" class="text-muted me-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-muted me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-muted me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-muted"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="text-center text-muted small">
+            © 2023 Luxury Hotels. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function() {
+        // Add highlight style dynamically
+        $('<style>')
+            .prop('type', 'text/css')
+            .html('.highlight { background-color: #ffeb3b; padding: 2px 5px; border-radius: 3px; animation: pulse 1.5s infinite; } @keyframes pulse { 0% { background-color: #ffeb3b; } 50% { background-color: #ffc107; } 100% { background-color: #ffeb3b; } }')
+            .appendTo('head');
+        
+        let isContentVisible = true;
+        
+        $("#slideUpBtn").click(function() {
+            if (isContentVisible) {
+                $(".container.mb-5").slideUp(1000);
+                $("#slideUpBtn").hide();
+                $("#slideDownBtn").show();
+                isContentVisible = false;
+            }
+        });
+        
+        $("#slideDownBtn").click(function() {
+            if (!isContentVisible) {
+                $(".container.mb-5").slideDown(1000);
+                $("#slideDownBtn").hide();
+                $("#slideUpBtn").show();
+                isContentVisible = true;
+            }
+        });
+
+        // 1. Toggle Navigation Menu
+        $("#toggleMenuBtn").click(function() {
+            $("#navbarNav").slideToggle();
+            $("header").toggleClass("shadow");
+        });
+        
+        // 2. Highlight Prices
+        $("#highlightPricesBtn").click(function() {
+            $(".fw-bold.text-primary").toggleClass("highlight");
+            $(this).find("i").toggleClass("fa-dollar-sign fa-times");
+            $(this).toggleClass("btn-warning btn-outline-warning");
+            
+            // Add temporary animation effect
+            if ($(".fw-bold.text-primary").hasClass("highlight")) {
+                $(".fw-bold.text-primary").css('animation', 'pulse 1.5s infinite');
+            } else {
+                $(".fw-bold.text-primary").css('animation', 'none');
+            }
+        });
+        
+        // 3. Change Theme
+        $("#changeThemeBtn").click(function() {
+            $("body").toggleClass("bg-dark text-white");
+            $("footer").toggleClass("bg-dark");
+            $(".card").toggleClass("bg-secondary text-white");
+            $(this).find("i").toggleClass("fa-moon fa-sun");
+            
+            if ($(this).hasClass("btn-dark")) {
+                $(this).removeClass("btn-dark").addClass("btn-light");
+            } else {
+                $(this).removeClass("btn-light").addClass("btn-dark");
+            }
+        });
+        
+        // 4. Hide/Show Images
+        $("#hideImagesBtn").click(function() {
+            $(".card-img-top").fadeToggle();
+            $(this).find("i").toggleClass("fa-eye fa-eye-slash");
+        });
+        
+        // 5. Shake Rooms Effect
+        $("#shakeRoomsBtn").click(function() {
+            $(".card").effect("shake", { distance: 10, times: 3 }, 800);
+        });
+        
+        // 6. Random Colors for Cards
+        $("#randomColorsBtn").click(function() {
+            const colors = ['#FF5733', '#33FF57', '#3357FF', '#F033FF', '#FF33F0'];
+            $(".card").each(function() {
+                const randomColor = colors[Math.floor(Math.random() * colors.length)];
+                $(this).css('background-color', randomColor);
+            });
+        });
+        
+        // PDF Viewer Toggle
+        $("#togglePdfBtn").click(function() {
+            $("#pdfViewerContainer").slideToggle();
+            $(this).find("i").toggleClass("fa-file-pdf fa-times");
+            
+            // Load PDF when first opened (replace with your actual PDF URL)
+            if ($("#pdfViewerContainer").is(":visible") && $("#pdfViewer").attr("src") === "") {
+                $("#pdfViewer").attr("src", "YOUR_PDF_URL_HERE.pdf");
+            }
+        });
+        
+        $("#closePdfBtn").click(function() {
+            $("#pdfViewerContainer").slideUp();
+            $("#togglePdfBtn").find("i").removeClass("fa-times").addClass("fa-file-pdf");
+        });
+        
+        // Smooth scrolling for room type navigation
+        $('a[href^="#"]').on('click', function(event) {
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: $($(this).attr('href')).offset().top - 100
+            }, 800);
+        });
+    });
+</script>
+</body>
+</html>

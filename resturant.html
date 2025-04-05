@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel & Restaurant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<!--Header Section-->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="fw-bold text-warning">LUXURY HOTELS</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-medium" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="Events.html">Events & Ballrooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="spa.html">Spa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="resturant.html">Dining</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="rooms.html">Rooms</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link btn btn-outline-dark px-3 fw-medium" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <div class="container-fluid text-white text-center d-flex align-items-center justify-content-center" style="height: 400px; background-image: url('./images/pexels-pixabay-262047.jpg'); background-size: cover; background-position: center;">
+        <h1>Welcome to Our Restaurant</h1>
+    </div>
+
+    <div class="container mt-5" id="restaurant">
+        <h2 class="text-center">Our Menu</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card menu-card">
+                    <img src="./images/louis-hansel-ZwpX0AJ7GV8-unsplash.jpg" class="card-img-top" alt="Dish 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Dish 1</h5>
+                        <p class="card-text">Delicious and freshly prepared.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card menu-card">
+                    <img src="./images/marissa-grootes-u2Lp8tXIcjw-unsplash.jpg" class="card-img-top" alt="Dish 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Dish 2</h5>
+                        <p class="card-text">A taste of perfection.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card menu-card">
+                    <img src="./images/brooke-lark-R18ecx07b3c-unsplash.jpg" class="card-img-top" alt="Dish 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Dish 3</h5>
+                        <p class="card-text">Exquisite flavors.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5" id="reserve">
+        <h2 class="text-center">Reserve a Meal</h2>
+        <form id="reservationForm">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="date" class="form-label">Reservation Date</label>
+                <input type="date" class="form-control" id="date" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+<!--Footer part-->
+<footer class="bg-light py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h5 class="fw-bold mb-3 text-warning">LUXURY HOTELS</h5>
+                <p class="text-muted small">Where exceptional service meets unparalleled luxury across Sri Lanka's finest locations.</p>
+            </div>
+            <div class="col-lg-2 col-md-6 mb-4">
+                <h5 class="fw-bold mb-3">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="index.html" class="text-muted text-decoration-none small">Home</a></li>
+                    <li class="mb-2"><a href="#" class="text-muted text-decoration-none small">Special Offers</a></li>
+                    <li class="mb-2"><a href="rooms.html" class="text-muted text-decoration-none small">Rooms & Suites</a></li>
+                    <li class="mb-2"><a href="#" class="text-muted text-decoration-none small">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 mb-4">
+                <h5 class="fw-bold mb-3">Help</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#" class="text-muted text-decoration-none small">FAQs</a></li>
+                    <li class="mb-2"><a href="#" class="text-muted text-decoration-none small">Location Guide</a></li>
+                    <li class="mb-2"><a href="#" class="text-muted text-decoration-none small">Accessibility</a></li>
+                    <li class="mb-2"><a href="#" class="text-muted text-decoration-none small">Support</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-5 col-md-6 mb-4">
+                <h5 class="fw-bold mb-3">Stay Connected</h5>
+                <p class="text-muted small">Subscribe for exclusive offers and updates</p>
+                <form class="d-flex mb-3">
+                    <input type="email" class="form-control rounded-0 rounded-start" placeholder="Your email address">
+                    <button class="btn rounded-0 rounded-end" style="background-color: #b08430; color: white;">Subscribe</button>
+                </form>
+                <div>
+                    <a href="#" class="text-muted me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-muted me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-muted me-3"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="text-muted"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="text-center text-muted small">
+            © 2023 Luxury Hotels. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+
+    <script>
+        $(document).ready(function(){
+            // Smooth scrolling for navigation
+            $(".nav-link").on("click", function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: $(this.hash).offset().top
+                    }, 800);
+                }
+            });
+            
+            // Fade-in effect for menu section
+            $("#restaurant").hide().fadeIn(2000);
+            
+            // Hover effect for menu cards
+            $(".menu-card").hover(function(){
+                $(this).css("transform", "scale(1.05)");
+            }, function(){
+                $(this).css("transform", "scale(1)");
+            });
+            
+            // Page transition effect
+            $("body").css("display", "none");
+            $("body").fadeIn(1000);
+            
+            // Form validation
+            $("#reservationForm").submit(function(event) {
+                var name = $("#name").val().trim();
+                var email = $("#email").val().trim();
+                var date = $("#date").val();
+                
+                if (name === "" || email === "" || date === "") {
+                    alert("Please fill in all fields.");
+                    event.preventDefault();
+                } else {
+                    alert("Reservation submitted successfully!");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
